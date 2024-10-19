@@ -1,50 +1,35 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[Live](https://xirtelan.github.io/react-arrows-master/)
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Created as part of the event ["React Jam Fall 2024"](https://reactjam.com/)
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
+## How to play
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Not responsive.Not intended for mobile devices The game window requires a screen width of 1024px
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Enemies move in 3 lines. Enter the specified sequence of arrows to kill the enemy in the same line as you. You have 5 seconds to enter the information. After that, the sequence will change.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Gradually the number of keys will increase, and the time for enemies to appear will speed up.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+You have 4 lives. For each enemy that reaches you, you lose 1
+
+## Controls
+
+z ,x ,c - change line
+
+← ↑ → ↓ (alternative NumPad 4 8 6 5 )
+
+## Assets Credits
+
+"Retro Inventory", ElvGames https://twitter.com/ElvGames
+
+Tiny RPG - Dragon Regalia GUI by Gabriel 'tiopalada' Lima is marked with CC0 1.0
+
+Background https://craftpix.net/file-licenses/
+
+Font - Arcade Classic Regular (Jakob Fischer)
+
