@@ -1,0 +1,13 @@
+.enemy {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  bottom: -40px;
+  transition: all 300ms linear;
+}
+
+.image {
+  height: 100px;
+  width: 100px;
+  scale: -4 4;
+}

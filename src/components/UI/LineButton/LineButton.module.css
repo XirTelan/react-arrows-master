@@ -1,0 +1,13 @@
+.linebtn {
+  border: 0;
+  width: 45px;
+  height: 45px;
+  background: none;
+  padding: 0;
+  position: relative;
+  text-shadow: 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black;
+}
+.linebtn-img {
+  position: absolute;
+  inset: 0;
+}

@@ -1,0 +1,50 @@
+:root {
+  --floor_offset: 10px;
+}
+
+.container {
+  overflow: hidden;
+  width: 1024px;
+  max-width: 1024px;
+  aspect-ratio: 16 / 9;
+  position: relative;
+}
+
+.enemy-positions {
+  position: absolute;
+  right: 0;
+  bottom: var(--floor_offset);
+  display: flex;
+  gap: 1rem;
+}
+
+.hero-position {
+  position: absolute;
+  left: 0;
+  bottom: var(--floor_offset);
+}
+
+.lines {
+  position: absolute;
+  width: 100%;
+  pointer-events: none;
+  height: 300px;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.score {
+
+  display: flex;
+  width: 250px;
+  height: 80px;
+  position: absolute;
+  align-items: center;
+  top: 0;
+  right: 0;
+}
+.score p {
+  font-size: 24px;
+}
