@@ -1,6 +1,7 @@
 import styles from "./ActionsBlock.module.css";
 import Arrow from "../UI/Arrow/Arrow";
 import actionsBg from "../../assets/actionsBg.png";
+import acceptIcon from "../../assets/accept_icon.png";
 import frame from "../../assets/frame.png";
 
 const ActionsBlock = ({
@@ -33,12 +34,7 @@ const ActionsBlock = ({
         <div className={styles.arrow} key={indx}>
           {currentPos[0] > indx ? (
             <div className={styles["success-mark"]}>
-              <img
-                src="./src/assets/accept_icon.png"
-                height={40}
-                width={40}
-                alt=""
-              />
+              <img src={acceptIcon} height={40} width={40} alt="" />
             </div>
           ) : currentPos[1] === 0 ? (
             <Arrow dir={val} />
