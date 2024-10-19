@@ -1,11 +1,12 @@
 import styles from "./LineButton.module.css";
+import btn from "../../../assets/Btn.png";
 
 const LineButton = ({ text, action }: { text: string; action: () => void }) => {
   return (
     <button onClick={action} className={styles["linebtn"]}>
       <img
         className={styles["linebtn-img"]}
-        src="./src/assets/Btn.png"
+        src={btn}
         width={45}
         height={45}
         alt=""

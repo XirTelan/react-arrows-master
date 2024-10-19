@@ -113,10 +113,6 @@ const GameMain = () => {
       const currentRow = newArr[player.activeLine as 1 | 2 | 3];
       if (newArr[player.activeLine as 1 | 2 | 3].length > 0) {
         currentRow.shift();
-        currentRow.push({
-          id: getUid(),
-          value: Math.min(0, currentRow.at(-1)?.value ?? 0) - 1,
-        });
         count++;
       }
       return newArr;
